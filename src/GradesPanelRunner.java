@@ -51,7 +51,9 @@ public class GradesPanelRunner {
             System.out.println("Add (C)ourse");
             System.out.println("Add (S)tudent");
             System.out.println("(Q)uit");
+            System.out.print("Enter your choice: ");
             String choice = x.nextLine();
+            System.out.println();
             while (!choice.equalsIgnoreCase("Q"))
             {
                 if (choice.equalsIgnoreCase("C"))
@@ -80,13 +82,6 @@ public class GradesPanelRunner {
                             System.out.println("Course Successfully Added");
                         }
                     }
-                    /* System.out.println();
-                    System.out.print("Course List: ");
-                    for (int i = 0; i < gp.getCourses().size(); i++)
-                    {
-                        System.out.print(gp.getCourses().get(i).getCourseName() + " -- ");
-                    } */
-
                 }
                 else if (choice.equalsIgnoreCase("S"))
                 {
@@ -127,7 +122,9 @@ public class GradesPanelRunner {
                 System.out.println("Add (C)ourse");
                 System.out.println("Add (S)tudent");
                 System.out.println("(Q)uit");
+                System.out.print("Enter your choice: ");
                 choice = x.nextLine();
+                System.out.println();
             }
             gp.saveInfo();
         }
