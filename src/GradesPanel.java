@@ -68,8 +68,9 @@ public class GradesPanel  {
                 fw.write(courses.get(i).getCourseName() + "\n");
                 for (int z = 0; z < courses.get(i).getStudents().size(); z++)
                 {
-                    fw.write(courses.get(i).getStudents().get(z).getName() + "\n");
+                    fw.write(courses.get(i).getStudents().get(z).getName() + " - " + courses.get(i).getStudents().get(z).getAverage() + "\n");
                 }
+                fw.write("\n");
             }
 
             fw.close();
