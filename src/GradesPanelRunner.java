@@ -10,9 +10,10 @@ public class GradesPanelRunner {
         LoginInfo p = new LoginInfo();
         GradesPanel gp = new GradesPanel();
         Courses c = new Courses();
+        Clear clear = new Clear();
 
         try {
-            File f = new File("src/logininfo.txt");
+            File f = new File("logininfo.txt");
             Scanner s = new Scanner(f);
             int line = 1;
             while (s.hasNextLine()) {
@@ -43,10 +44,11 @@ public class GradesPanelRunner {
         String us = x.nextLine();
         System.out.print("Please enter your password: ");
         String pa = x.nextLine();
-        p.verifyLogin(us, pa, "src/logininfo.txt");
+        p.verifyLogin(us, pa, "logininfo.txt");
 
         if (p.isCorrectLogin())
         {
+            clear.clear();
             System.out.println("What would you like to do today?");
             System.out.println("Add (C)ourse");
             System.out.println("Add (S)tudent");
@@ -119,6 +121,7 @@ public class GradesPanelRunner {
                     System.out.println("ERROR: Invalid choice. ");
                 }
                 System.out.println();
+                clear.clear();
                 System.out.println("Add (C)ourse");
                 System.out.println("Add (S)tudent");
                 System.out.println("(Q)uit");

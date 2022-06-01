@@ -89,9 +89,9 @@ public class LoginInfo {
 
     public void save() {
         try {
-            File f = new File("src/logininfo.txt");
+            File f = new File("logininfo.txt");
             f.createNewFile();
-            FileWriter fw = new FileWriter("src/logininfo.txt");
+            FileWriter fw = new FileWriter("logininfo.txt");
             fw.write(username + "\n");
             fw.write(password);
             fw.close();

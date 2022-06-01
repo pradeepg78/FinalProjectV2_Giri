@@ -59,9 +59,9 @@ public class GradesPanel  {
     public void saveInfo()
     {
         try {
-            File f = new File("src/info.data");
+            File f = new File("info.data");
             f.createNewFile();
-            FileWriter fw = new FileWriter("src/info.data");
+            FileWriter fw = new FileWriter("info.data");
 
             for (int i = 0; i < courses.size(); i++)
             {
