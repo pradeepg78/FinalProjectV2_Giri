@@ -2,9 +2,6 @@ import java.io.*;
 import java.util.*;
 
 public class GradesPanelRunner {
-    private static boolean correctLogin;
-    private static Scanner s;
-
     public static void main(String[] args) {
         Scanner x = new Scanner(System.in);
         LoginInfo p = new LoginInfo();

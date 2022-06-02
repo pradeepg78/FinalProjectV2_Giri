@@ -4,11 +4,6 @@ import java.io.*;
 public class GradesPanel  {
     private ArrayList <Courses> courses = new ArrayList<Courses>();
 
-    public GradesPanel (ArrayList<Courses> courses)
-    {
-        this.courses = courses;
-    }
-
     public GradesPanel () {}
 
     public void addCourse(Courses c)
@@ -40,20 +35,6 @@ public class GradesPanel  {
                 courses.get(i).addStudents(s);
             }
         }
-    }
-
-    public ArrayList<String> getStudentsNames()
-    {
-        ArrayList<String> n = new ArrayList<String>();
-        for (int i = 0; i < courses.get(i).getStudents().size(); i++)
-        {
-            for (int z = 0; z < courses.get(z).getStudents().size(); z++)
-            {
-                n.add(courses.get(i).getStudents().get(z).getName());
-            }
-        }
-        System.out.println(n);
-        return n;
     }
 
     public void saveInfo()

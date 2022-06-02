@@ -4,12 +4,6 @@ public class Courses {
     private String courseName;
     private ArrayList <Student> students = new ArrayList<Student>();;
 
-    public Courses (ArrayList<Student> students, String courseName)
-    {
-        this.students = students;
-        this.courseName = courseName;
-    }
-
     public Courses ()
     {
         courseName = "";
@@ -29,11 +23,6 @@ public class Courses {
     public ArrayList<Student> getStudents()
     {
         return students;
-    }
-
-    public void setStudents(ArrayList<Student> students)
-    {
-        this.students = students;
     }
 
     public void addStudents(Student s)

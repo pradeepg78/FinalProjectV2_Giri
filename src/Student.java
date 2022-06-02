@@ -15,26 +15,6 @@ public class Student {
         return name;
     }
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
-
-    public ArrayList<Double> getGrades()
-    {
-        return grades;
-    }
-
-    public void setGrades(ArrayList<Double> grades)
-    {
-        this.grades = grades;
-    }
-
-    public void addGrades(double g)
-    {
-        grades.add(g);
-    }
-
     public double getAverage()
     {
         double sum = 0;
