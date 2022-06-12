@@ -6,7 +6,6 @@ public class GradesPanelRunner {
         Scanner x = new Scanner(System.in);
         LoginInfo p = new LoginInfo();
         GradesPanel gp = new GradesPanel();
-        Courses c = new Courses();
         Clear clear = new Clear();
 
         try {
@@ -62,8 +61,9 @@ public class GradesPanelRunner {
 
                     if (gp.getCourses().size() == 0)
                     {
-                        c.setCourseName(courseName);
-                        gp.addCourse(c);
+                        Courses toAdd = new Courses();
+                        toAdd.setCourseName(courseName);
+                        gp.addCourse(toAdd);
                         System.out.println("Course Successfully Added");
                     }
                     else
